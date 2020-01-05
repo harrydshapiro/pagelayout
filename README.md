@@ -51,7 +51,7 @@ Flebox establishes an axis (horizontal or vertical, your choice) along which ele
 
  1. In CSS, set your parent to `display: flex;`
  2. For a horizontal flow of elements, set the parent to `flex-direction: row`. For a vertical flow of elements, set `flex-direction: column`.
- 3. Do your child elements have set size? Set your parent to `flex-wrap: wrap;`. Should your child elements' size conform to the size of the parent? Set your parent to `flex-wrap: nowrap;`. Note: this is not all you have to do to determine element sizing. See [flex grow/shrink](#flex) and height/width for more.
+ 3. Do your child elements have set size? Set your parent to `flex-wrap: wrap;`. Should your child elements' size conform to the size of the parent? Set your parent to `flex-wrap: nowrap;`. Note: this is not all you have to do to determine element sizing. See [flex grow/shrink](#flex) and [height/width](#height/width) for more.
  4. To space elements along the axis, apply  `justify-content` to the parent. Use [this](https://www.w3schools.com/cssref/playit.asp?filename=playcss_justify-content&preval=flex-start) visualizer to pick an option before you memorize all of them.
  5. To space elements against the axis, use `align-items` to the parent. Use [this](https://www.w3schools.com/cssref/playit.asp?filename=playcss_align-items&preval=stretch) visualizer to pick an option before you memorize all of them.
 
@@ -70,7 +70,7 @@ The flex property is pretty confusing, check out examples [here](https://develop
 CSS Tricks has a great [article](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) to use as a reference for flexbox.
 [Flexbox Froggy](https://flexboxfroggy.com/) is a fun game to help you learn flexbox rules.
 
-## Height / Width
+## Height/Width
 
 Height and width can be expressed:
 
