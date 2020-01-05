@@ -5,7 +5,7 @@
 
 HTML will be your *one and only* place to establish relationships between elements. CSS and JavaScript leverage those connections, but HTML is where the connections are established.
 
-There are two kinds of relationships: nesting and shared selector. 
+There are two kinds of relationships: **nesting** and **shared selector**. 
 
 ### Nesting
 Nesting elements inside a parent element, often a \<div> or a [semantic](https://www.w3schools.com/html/html5_semantic_elements.asp) element, enables three things:
