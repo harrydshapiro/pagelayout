@@ -51,11 +51,11 @@ Flebox establishes an axis (horizontal or vertical, your choice) along which ele
 
  1. In CSS, set your parent to `display: flex;`
  2. For a horizontal flow of elements, set the parent to `flex-direction: row`. For a vertical flow of elements, set `flex-direction: column`.
- 3. Do your child elements have set size? Set your parent to `flex-wrap: wrap;`. Should your child elements' size conform to the size of the parent? Set your parent to `flex-wrap: nowrap;`.
+ 3. Do your child elements have set size? Set your parent to `flex-wrap: wrap;`. Should your child elements' size conform to the size of the parent? Set your parent to `flex-wrap: nowrap;`. Note: this is not all you have to do to determine element sizing. See [flex grow/shrink](#flex) and height/width for more.
  4. To space elements along the axis, apply  `justify-content` to the parent. Use [this](https://www.w3schools.com/cssref/playit.asp?filename=playcss_justify-content&preval=flex-start) visualizer to pick an option before you memorize all of them.
  5. To space elements against the axis, use `align-items` to the parent. Use [this](https://www.w3schools.com/cssref/playit.asp?filename=playcss_align-items&preval=stretch) visualizer to pick an option before you memorize all of them.
 
-###  Flex grow/shrink
+###  Flex
 Do you want your sibling elements to grow inside of the flexbox according to set size ratios? Apply `flex: [some number]` to each sibling, where the number reflects its size relative to every other element. 
 
 For example, if you have 3 siblings, 2 with `flex: 1` and 1 with `flex: 2`, the first two will stretch to take up 25% of the space along the axis, and the final element will stretch to take up 50%.
