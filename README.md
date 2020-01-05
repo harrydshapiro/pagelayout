@@ -105,4 +105,10 @@ Margin and padding can be expressed:
 - As whatever the parent's margin/padding is, using `inheret`
 - *Margin only:* According to a browser's "auto" [rules](https://www.hongkiat.com/blog/css-margin-auto/) by using `auto`. Typically this will be used to center an element horizontally or take up all the remaining space on one side of an element.
 
+You can use the following shorthands. All apply for padding as well:
+- margin: top, right, bottom, left;
+- margin: top, right/left, bottom;
+- margin: top/bottom, right/left;
+- margin: top/right/bottom/left;
+
 If an element has`box-sizing: border-box;`, its width and height measurements will remain the static and padding will be placed inside it. If an element has`box-sizing: content-box;`, its padding will be added to the width and height. Visualization [here](https://css-tricks.com/box-sizing/).
