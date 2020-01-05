@@ -94,6 +94,7 @@ If using just min- or max-, the unit must be the different from the main measure
 ## Margin / Padding
 
 **Margin should be used to create personal space outside of a parent.**
+
 **Padding should be used to make a buffer between a parent's border and its inner content.**   
 
 Margin and padding exist in all four directions, all of which can have differing measurements.
