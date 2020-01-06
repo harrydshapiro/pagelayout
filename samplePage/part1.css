@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  flex-wrap: nowrap;
+  margin:0;
+}
+.page-section {
+  height: 100vh;
+}
+.page-section-top {
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  height:60px;
+  border-bottom:1.5px solid #80808059;
+}
+#left-menu {
+  width: 260px;
+  background:#3D424A;
+  display:flex;
+  flex-direction:column;
+}
+#left-menu > div {
+  padding:0 10px;
+}
+#left-menu.collapsed {
+  width: 75px;
+}
+#main-content {
+  flex: 1;
+}
+#main-content .page-section-top {
+  padding:0 20px;
+}
+#main-content .page-section-content {
+  width: 80%;
+  margin: 30px auto;
+  max-width: 720px;
+}
+.button.tiles svg {
+  height:24px;
+  width:24px:
+}
+.button.collapse svg {
+  height:24px;
+  transform: rotate(90deg);
+}
+#left-menu path {
+  fill:white;
+}
+.chapter-selector {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px 0;
+  color:white
+}
+.logo.big {
+  background-image: url(https://learn-2.galvanize.com/assets/svg/g-learn-lockup-239fa1822f6ddb72732d0368f3215a672a8863f8987db3c3900f60c2e8fd18c9.svg);
+  height: 50%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: left;
+  flex: 1;
+}
+h1, p, li {
+  margin:0;
+  font-family:sans-serif
+}
+.flex-wrap-demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 350px;
+  margin: 30px auto;
+  border: 1px solid grey;
+}
+.flex-wrap-tile {
+  height:40px;
+  width:40px;
+  margin:20px;
+  background:orange;
+}
