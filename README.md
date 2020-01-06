@@ -96,6 +96,11 @@ If using just min- or max-, the unit must be the different from the main measure
 
 **Padding should be used to make a buffer between a parent's border and its inner content.**   
 
+As you develop, you will naturally understand the importance of this rule. Until then, here are some salient reasons:
+- Following any convention makes code easier for others to read
+- If you use padding to do margin's job, you miss out on `auto`
+- Border is placed between margin and padding
+
 Margin and padding exist in all four directions, all of which can have differing measurements.
 
 Margin and padding can be expressed:
