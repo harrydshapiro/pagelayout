@@ -115,7 +115,7 @@ You can use the following shorthands. All apply for padding as well:
 - margin: top/bottom, right/left;
 - margin: top/right/bottom/left;
 
-If an element has`box-sizing: border-box;`, its width and height measurements will remain the static and padding will be placed inside it. If an element has`box-sizing: content-box;`, its padding will be added to the width and height. Visualization [here](https://css-tricks.com/box-sizing/).
+If an element has`box-sizing: border-box;`, its width and height measurements will remain the static and padding will be placed inside it. If an element has`box-sizing: content-box;`, its padding will be added to the width and height. [Visualization](https://css-tricks.com/box-sizing/).
 
 ## Proposed architecture workflow
 1. Get as many mocks of the page's layout as possible. Ideally you have at least four (phone, tablet, small - medium desktop, large desktop). If you need to, draw something yourself. **Do not skip this step.**
