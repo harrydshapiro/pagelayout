@@ -9,21 +9,21 @@ HTML will be your *one and only* place to establish relationships between elemen
 There are two kinds of relationships: **nesting** and **shared selector**. 
 
 ### Nesting
-Nesting elements inside a parent element, often a \<div> or a [semantic](https://www.w3schools.com/html/html5_semantic_elements.asp) element, enables three things:
+Nesting elements inside a parent element, typically a \<div> or a [semantic](https://www.w3schools.com/html/html5_semantic_elements.asp) element, enables three things:
 
  1. Movement of the inner contents en masse
  2. Internal organization of the inner contents, typically via flexbox or grid
  3. Styling all children simultaneously based on the state of the parent element
 
-If you want any of those powers, nest! You should also use these rules of thumb as clues you should nest elements in a parent:
+If you want any of those powers, nest! These rules of thumb are also clues that you should nest elements in a parent:
 - You could refer to the group of elements as a singular entity: "navbar," "suggested videos," "main article," "comments section," etc.
 -  You look at the elements and mentally position them in relation to each other - like aligning two photos on a wall
 - It would make sense to put a border around the elements (it's fine if it's ugly, this is just a test of how self-contained the content is)
 
 ### Selector Choice
-**Selectors create handholds on HTML elements that CSS and JavaScript can grab onto**. You can then use these handholds to position or size certain related elements, regardless of the parent/child relationship. 
+**Selectors are handholds on HTML elements that CSS and JavaScript can grab onto**. You can then use these handholds to position or size certain related elements, regardless of the parent/child relationship. 
 
-Any repeating item, appearance, or characteristic should have its own CSS selector. Most elements should not receive their entire styling thanks to one selector. You should be abstracting out different aspects of styling to keep your CSS DRY and maintainable.
+Any repeating item, appearance, or characteristic should have its own CSS selector. Most elements should not receive their entire styling thanks to one selector. Abstracting aspects of styling will make your CSS DRY and maintainable.
 
 For example, a tile on your Netflix homepage might have:
  - class="tile unselected small" 
@@ -36,7 +36,7 @@ Its parent element, representing the row of tiles, may have
 
 Fragmenting the selectors like this would enable, for example, styling just for unselected tiles of selected rows, by using `.row.selected .tile.unselected`.
 
-There's no need for an exhaustive list of available selectors when great resources like [this](https://www.w3schools.com/cssref/css_selectors.asp) already exist. I **highly** recommend that you familiarize yourself with selector options/tactics, particularly combining selectors using an [object-oriented approach to styling](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/) and using [custom data attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*).
+There's no need for an exhaustive list of available selectors when there are great resources like [this](https://www.w3schools.com/cssref/css_selectors.asp). I **highly** recommend that you familiarize yourself with selector options/tactics, particularly combining selectors using an [object-oriented approach to styling](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/) and using [custom data attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*).
 
 ## Flexbox
 
@@ -52,20 +52,18 @@ Flebox establishes an axis (horizontal or vertical, your choice) along which ele
 
  1. In CSS, set your parent to `display: flex;`
  2. For a horizontal flow of elements, set the parent to `flex-direction: row`. For a vertical flow of elements, set `flex-direction: column`.
- 3. Do your child elements have set size? Set your parent to `flex-wrap: wrap;`. Should your child elements' size conform to the size of the parent? Set your parent to `flex-wrap: nowrap;`. Note: this is not all you have to do to determine element sizing. See [flex grow/shrink](#flex) and [height/width](#height--width) for more.
- 4. To space elements along the axis, apply  `justify-content` to the parent. Use [this](https://www.w3schools.com/cssref/playit.asp?filename=playcss_justify-content&preval=flex-start) visualizer to pick an option before you memorize all of them.
- 5. To space elements against the axis, use `align-items` to the parent. Use [this](https://www.w3schools.com/cssref/playit.asp?filename=playcss_align-items&preval=stretch) visualizer to pick an option before you memorize all of them.
+ 3. Do your child elements have set size? Set your parent to `flex-wrap: wrap;`. Should your child elements' size conform to the size of the parent? Set your parent to `flex-wrap: nowrap;`. *Note: this is not all you have to do to determine element sizing. See [flex grow/shrink](#flex) and [height/width](#height--width) for more.*
+ 4. To space elements along the axis, apply  `justify-content` to the parent. [Visualizer](https://www.w3schools.com/cssref/playit.asp?filename=playcss_justify-content&preval=flex-start).
+ 5. To space elements against the axis, use `align-items` to the parent. [Visualizer](https://www.w3schools.com/cssref/playit.asp?filename=playcss_align-items&preval=stretch).
 
 ###  Flex
-Do you want your sibling elements to grow inside of the flexbox according to set size ratios? Apply `flex: [some number]` to each sibling, where the number reflects its size relative to every other element. 
+Do you want your sibling elements to grow inside of the flexbox according to specific ratios? Apply `flex: [some number]` to each sibling, where the number reflects its size relative to every other element. 
 
 For example, if you have 3 siblings, 2 with `flex: 1` and 1 with `flex: 2`, the first two will stretch to take up 25% of the space along the axis, and the final element will stretch to take up 50%.
 
-What if some elements in your flexbox need to have a specific size, while others should just grow or shrink to fill the space? Flex is often combined with other sizing rules because it takes up "the remaining space," whatever that space is, while sizing rules like `width` and `height` are much more explicit. 
+Pro tip: Flex is often combined with other sizing rules because flex takes up "the remaining space," whatever that space is, while sizing rules like `width` and `height` are much more explicit. 
 
-Note that flex is set on child elements, not the parent (which is set to `display:flex`). 
-
-The flex property is pretty confusing, check out examples [here](https://developer.mozilla.org/en-US/docs/Web/CSS/flex) to help you visualize it. 
+Note that flex is set on child elements, not the parent (which is set to `display:flex`). Go [here](https://developer.mozilla.org/en-US/docs/Web/CSS/flex) for examples to help visualize flex. 
 
 ### Flexbox resources:
 CSS Tricks has a great [article](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) to use as a reference for flexbox.
@@ -75,10 +73,10 @@ CSS Tricks has a great [article](https://css-tricks.com/snippets/css/a-guide-to-
 
 Height and width can be expressed:
 
- 1. Intrinsically, using px
- 2. Relative to its parent's size along the same dimension, using %
- 3. Relative to the [viewport](https://www.w3schools.com/css/css_rwd_viewport.asp), using vw or vh
- 4. Relative to a fixed variable, using rem, em, or combining [calc()](https://developer.mozilla.org/en-US/docs/Web/CSS/calc) with [custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+ 1. Intrinsically, using `px`
+ 2. Relative to its parent's size along the same dimension, using `%`
+ 3. Relative to the [viewport](https://www.w3schools.com/css/css_rwd_viewport.asp), using `vw` or `vh`
+ 4. Relative to a fixed variable, using `rem`, `em`, or combining [calc()](https://developer.mozilla.org/en-US/docs/Web/CSS/calc) with [custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 
 ### Min-width/height and max-width/height
 
