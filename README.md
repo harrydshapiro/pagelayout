@@ -104,10 +104,10 @@ As you develop, you will naturally understand the importance of this rule. Until
 Margin and padding exist in all four directions, all of which can have differing measurements.
 
 Margin and padding can be expressed:
-- Intrinsically, using px
-- Relative to the width of the parent element, using %
+- Intrinsically, using `px`
+- Relative to the width of the parent element, using `%`
 - As whatever the parent's margin/padding is, using `inheret`
-- *Margin only:* According to a browser's "auto" [rules](https://www.hongkiat.com/blog/css-margin-auto/) by using `auto`. Typically this will be used to center an element horizontally or take up all the remaining space on one side of an element.
+- *Margin only:* According to a browser's `auto` [rules](https://www.hongkiat.com/blog/css-margin-auto/) by using `auto`. Typically this will be used to center an element horizontally or take up all the remaining space on one side of an element.
 
 You can use the following shorthands. All apply for padding as well:
 - margin: top, right, bottom, left;
