@@ -1,7 +1,7 @@
 
 
 # Page Architecture
-The below text is a summary of all concepts discussed during our first CSS lecture, covering page layout. [./samplePage](./samplePage) contains the webpage used for the demo. 
+The below text is a summary of all concepts discussed during our first CSS lecture, covering page layout. [samplePage](./samplePage) contains the webpage used for the demo. 
 
 ## Markup
 
