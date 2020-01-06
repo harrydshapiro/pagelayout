@@ -1,6 +1,7 @@
 
 
 # Page Architecture
+The below text is a summary of all concepts discussed during our first CSS lecture, covering page layout. [./samplePage](./samplePage) contains the webpage used for the demo. 
 
 ## Markup
 
@@ -104,10 +105,10 @@ As you develop, you will naturally understand the importance of this rule. Until
 Margin and padding exist in all four directions, all of which can have differing measurements.
 
 Margin and padding can be expressed:
-- Intrinsically, using px
-- Relative to the width of the parent element, using %
+- Intrinsically, using `px`
+- Relative to the width of the parent element, using `%`
 - As whatever the parent's margin/padding is, using `inheret`
-- *Margin only:* According to a browser's "auto" [rules](https://www.hongkiat.com/blog/css-margin-auto/) by using `auto`. Typically this will be used to center an element horizontally or take up all the remaining space on one side of an element.
+- *Margin only:* According to a browser's `auto` [rules](https://www.hongkiat.com/blog/css-margin-auto/). Typically this will be used to center an element horizontally or take up all the remaining space on one side of an element.
 
 You can use the following shorthands. All apply for padding as well:
 - margin: top, right, bottom, left;
@@ -115,7 +116,7 @@ You can use the following shorthands. All apply for padding as well:
 - margin: top/bottom, right/left;
 - margin: top/right/bottom/left;
 
-If an element has`box-sizing: border-box;`, its width and height measurements will remain the static and padding will be placed inside it. If an element has`box-sizing: content-box;`, its padding will be added to the width and height. Visualization [here](https://css-tricks.com/box-sizing/).
+If an element has`box-sizing: border-box;`, its width and height measurements will remain the static and padding will be placed inside it. If an element has`box-sizing: content-box;`, its padding will be added to the width and height. [Visualization](https://css-tricks.com/box-sizing/).
 
 ## Proposed architecture workflow
 1. Get as many mocks of the page's layout as possible. Ideally you have at least four (phone, tablet, small - medium desktop, large desktop). If you need to, draw something yourself. **Do not skip this step.**
