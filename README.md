@@ -1,25 +1,24 @@
 
 
 # Page Architecture
-The below text is a summary of all concepts discussed during our first CSS lecture, covering page layout. [samplePage](./samplePage) contains the webpage used for the demo. 
 
 ## Markup
 
 HTML will be your *one and only* place to establish relationships between elements. CSS and JavaScript leverage those connections, but HTML is where the connections are established.
 
-There are two kinds of relationships: **nesting** and **shared selector**. 
+There are two kinds of relationships you can establish via HTML: **nesting** and **shared selector**. 
 
 ### Nesting
 Nesting elements inside a parent element, typically a \<div> or a [semantic](https://www.w3schools.com/html/html5_semantic_elements.asp) element, enables three things:
 
- 1. Movement of the inner contents en masse
+ 1. Movement of the inner contents all at once
  2. Internal organization of the inner contents, typically via flexbox or grid
- 3. Styling all children simultaneously based on the state of the parent element
+ 3. Styling all children simultaneously
 
 If you want any of those powers, nest! These rules of thumb are also clues that you should nest elements in a parent:
 - You could refer to the group of elements as a singular entity: "navbar," "suggested videos," "main article," "comments section," etc.
 -  You look at the elements and mentally position them in relation to each other - like aligning two photos on a wall
-- It would make sense to put a border around the elements (it's fine if it's ugly, this is just a test of how self-contained the content is)
+- It would logically make sense to put a border around the elements (it's fine if the border would be ugly, this is just a test of how self-contained the content is)
 
 ### Selector Choice
 **Selectors are handholds on HTML elements that CSS and JavaScript can grab onto**. You can then use these handholds to position or size certain related elements, regardless of the parent/child relationship. 
@@ -43,7 +42,7 @@ There's no need for an exhaustive list of available selectors when there are gre
 
 Flexbox lets you visually organize a parent's immediate children using words. 
 
-Flebox establishes an axis (horizontal or vertical, your choice) along which elements move. It then gives you tools to determine:
+Flexbox establishes an axis (horizontal or vertical, your choice) along which elements move. It then gives you tools to determine:
 - How elements should be spaced along the axis
 - How elements should be spaced perpendicular to the axis
 - How elements should stretch/shrink (if at all) to fill the space of the flexbox
@@ -63,8 +62,6 @@ Do you want your sibling elements to grow inside of the flexbox according to spe
 For example, if you have 3 siblings, 2 with `flex: 1` and 1 with `flex: 2`, the first two will stretch to take up 25% of the space along the axis, and the final element will stretch to take up 50%.
 
 Pro tip: Flex is often combined with other sizing rules because flex takes up "the remaining space," whatever that space is, while sizing rules like `width` and `height` are much more explicit. 
-
-Note that flex is set on child elements, not the parent (which is set to `display:flex`). Go [here](https://developer.mozilla.org/en-US/docs/Web/CSS/flex) for examples to help visualize flex. 
 
 ### Flexbox resources:
 CSS Tricks has a great [article](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) to use as a reference for flexbox.
