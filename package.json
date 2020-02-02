@@ -9,7 +9,8 @@
   "scripts": {
     "start": "nodemon server.js",
     "build-dev": "webpack -w -d --mode development",
-    "build-prod": "webpack -p --mode production"
+    "build-prod": "webpack -p --mode production",
+    "heroku-postbuild": "webpack -p"
   },
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.8.3",
