@@ -1,7 +1,7 @@
 
 
 # Page Architecture
-The below text is a summary of all concepts discussed during our first CSS lecture, covering page layout. [./samplePage](./samplePage) contains the webpage used for the demo. 
+The below text is a summary of all concepts discussed during our first CSS lecture, covering page layout. [samplePage](./samplePage) contains the webpage used for the demo. 
 
 ## Markup
 
@@ -122,8 +122,8 @@ If an element has`box-sizing: border-box;`, its width and height measurements wi
 1. Get as many mocks of the page's layout as possible. Ideally you have at least four (phone, tablet, small - medium desktop, large desktop). If you need to, draw something yourself. **Do not skip this step.**
 2. Find the most abstract, general sections, and write them in HTML. Give each at least one id or class that definitively identifies what the section is.
 3. Go into each element and get *one* level more specific. You should be painting the picture of the site with breadth-first specificity. 
-	> Imagine a computer loading an image. It starts with huge pixels, and its resolution over multiple iterations. You should follow the same process until you hit your "base case" content - text, media, and any other elements that will not have children.
+	> Imagine a computer loading an image. It starts with huge pixels, and its resolution increases iteratively. You should follow the same process until you hit your "base case" content - text, media, and any other elements that will not have children.
 4. Step 3 should have taken a long time. Every element should have an id or class(es) that identify what it is. But now that you can see the full picture of the page, identify *anything that repeats and add classes/data- attributes that flag these patterns*.
 	> See two "skip" buttons? Give them both a `skip-button` class. See accent text which will have a different font? Give them an `accent-text` class. 
-5. You're ready to move to CSS. Follow the same bread-first approach to layout. Consider an elements **size** and **internal organization**. <br><br>If the size is anything other than "whatever the size of the children is," you need to write CSS specifying so.<br><br>If the iternal organization should be anything other than "each child one below another, all justified to the left", you need to write CSS specifying so.<br><br>I will leave the specific CSS decisions up to you. Please consider what you want to achieve, and find the rule and units that will achieve your result.<br><br>
+5. You're ready to move to CSS. Follow the same breadth-first approach to layout. Consider an elements **size** and **internal organization**. <br><br>If the size is anything other than "whatever the size of the children is," you need to write CSS specifying so.<br><br>If the iternal organization should be anything other than "each child one below another, all justified to the left", you need to write CSS specifying so.<br><br>I will leave the specific CSS decisions up to you. Please consider what you want to achieve, and find the rule and units that will achieve your result.<br><br>
 6. Why are you still here.... you're done...
